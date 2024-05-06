@@ -30,7 +30,7 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images','files']
 
 THEME = 'themes/alchemy'
 THEME_CSS_OVERRIDES = ['themes/css/oldstyle.css']
