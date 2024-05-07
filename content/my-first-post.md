@@ -10,7 +10,7 @@ altair: True
 This is my first post using Pelican!
 
 ![Python logo](/images/python-logo.png)
-<div id="diversitygraph"></div>
+<!-- <div id="diversitygraph"></div> -->
 <section id="scrolly">
 			<article>
 				<div class="step" data-step="1">

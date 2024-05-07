@@ -47,14 +47,14 @@
     {{ article.content }}
   </div>
 </article>
-{% if 'scripts' in article.metadata %}
+<!-- {% if 'scripts' in article.metadata %}
     {% for script in article.metadata.scripts.split(', ') %}
       <script>
         var json_file = "{{ SITEURL }}/files/{{ script }}.json";
         vegaEmbed('#{{ script }}', json_file);
       </script>
     {% endfor %}
-  {% endif %}
+  {% endif %} -->
 {% if 'scripts' in article.metadata %}
   <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 	<script src="https://unpkg.com/scrollama"></script>
@@ -63,10 +63,13 @@
 		var main = d3.select("main");
 		var scrolly = main.select("#scrolly");
 		var figure = scrolly.select("figure");
-    var altairDiv = document.createElement("div");
 		var article = scrolly.select("article");
 		var step = article.selectAll(".step");
-
+    
+    var altairIds = {
+      0: "diversitygraph",
+      1: "diversitygraph2",
+    }
 		// initialize the scrollama
 		var scroller = scrollama();
 
@@ -98,7 +101,25 @@
 			});
 
 			// update graphic based on step
-			figure.select("p").text(response.index + 1);
+			//figure.select("p").text(response.index + 1);
+      // Delete existing div if it exists in the figure by selecting any divs within figure
+      var figureElement = document.querySelector("#scrolly figure");
+      var divs = figureElement.querySelectorAll("div");
+      divs.forEach(function(div) {
+        div.remove();
+      });
+
+      // Use the index to get the altair div id and create the div and append it to the figure
+      var altairDivId = altairIds[response.index];
+      var altairDiv = document.createElement("div");
+      altairDiv.id = altairDivId;
+      console.log(altairDivId);
+      console.log(altairDiv);
+      
+      figureElement.appendChild(altairDiv);
+      //Use the altair div id to get the altair script and embed it
+      var json_file = "{{ SITEURL }}/files/" + altairDivId + ".json";
+      vegaEmbed('#' + altairDivId, json_file);
 		}
 
 		function init() {

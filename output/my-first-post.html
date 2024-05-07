@@ -9,14 +9,14 @@
   
   <title>My First Post | Disney and Pixar Animated Film Casting Diversity
 </title>
-  <link rel="canonical" href="https://Evimess.github.io/disney-diversity/my-first-post.html">
+  <link rel="canonical" href="./my-first-post.html">
 
 
 
-  <link rel="stylesheet" href="https://Evimess.github.io/disney-diversity/theme/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://Evimess.github.io/disney-diversity/theme/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://Evimess.github.io/disney-diversity/theme/css/pygments/default.min.css">
-  <link rel="stylesheet" href="https://Evimess.github.io/disney-diversity/theme/css/style.css">
+  <link rel="stylesheet" href="./theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="./theme/css/style.css">
   <style>
 		#scrolly {
 			position: relative;
@@ -99,7 +99,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="title"><a href="https://Evimess.github.io/disney-diversity">Disney and Pixar Animated Film Casting Diversity</a></h1>
+          <h1 class="title"><a href=".">Disney and Pixar Animated Film Casting Diversity</a></h1>
           <ul class="list-inline">
             <li class="list-inline-item"><a href="#" target="_blank">A Course Project</a></li>
             <li class="list-inline-item"><a href="https://zoeleblanc.com/is310-computing-humanities-2024/" target="_blank">IS310 Course Website</a></li>
@@ -123,20 +123,20 @@
       </li>
       <li class="list-inline-item">
         <i class="fa fa-folder-open-o"></i>
-        <a href="https://Evimess.github.io/disney-diversity/category/python.html">Python</a>
+        <a href="./category/python.html">Python</a>
       </li>
       <li class="list-inline-item">
         <i class="fa fa-user-o"></i>
-        <a href="https://Evimess.github.io/disney-diversity/author/evan-ma.html">Evan Ma</a>      </li>
+        <a href="./author/evan-ma.html">Evan Ma</a>      </li>
       <li class="list-inline-item">
         <i class="fa fa-files-o"></i>
-        <a href="https://Evimess.github.io/disney-diversity/tag/pelican.html">#pelican</a>,         <a href="https://Evimess.github.io/disney-diversity/tag/python.html">#python</a>      </li>
+        <a href="./tag/pelican.html">#pelican</a>,         <a href="./tag/python.html">#python</a>      </li>
     </ul>
   </header>
   <div class="content">
     <p>This is my first post using Pelican!</p>
 <p><img alt="Python logo" src="/images/python-logo.png"></p>
-<div id="diversitygraph"></div>
+<!-- <div id="diversitygraph"></div> -->
 <section id="scrolly">
             <article>
                 <div class="step" data-step="1">
@@ -162,10 +162,11 @@
         </section>
   </div>
 </article>
-      <script>
-        var json_file = "https://Evimess.github.io/disney-diversity/files/diversitygraph.json";
+<!--       <script>
+        var json_file = "./files/diversitygraph.json";
         vegaEmbed('#diversitygraph', json_file);
       </script>
+ -->
   <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 	<script src="https://unpkg.com/scrollama"></script>
 	<script>
@@ -173,10 +174,13 @@
 		var main = d3.select("main");
 		var scrolly = main.select("#scrolly");
 		var figure = scrolly.select("figure");
-    var altairDiv = document.createElement("div");
 		var article = scrolly.select("article");
 		var step = article.selectAll(".step");
-
+    
+    var altairIds = {
+      0: "diversitygraph",
+      1: "diversitygraph2",
+    }
 		// initialize the scrollama
 		var scroller = scrollama();
 
@@ -208,7 +212,25 @@
 			});
 
 			// update graphic based on step
-			figure.select("p").text(response.index + 1);
+			//figure.select("p").text(response.index + 1);
+      // Delete existing div if it exists in the figure by selecting any divs within figure
+      var figureElement = document.querySelector("#scrolly figure");
+      var divs = figureElement.querySelectorAll("div");
+      divs.forEach(function(div) {
+        div.remove();
+      });
+
+      // Use the index to get the altair div id and create the div and append it to the figure
+      var altairDivId = altairIds[response.index];
+      var altairDiv = document.createElement("div");
+      altairDiv.id = altairDivId;
+      console.log(altairDivId);
+      console.log(altairDiv);
+      
+      figureElement.appendChild(altairDiv);
+      //Use the altair div id to get the altair script and embed it
+      var json_file = "./files/" + altairDivId + ".json";
+      vegaEmbed('#' + altairDivId, json_file);
 		}
 
 		function init() {
@@ -240,10 +262,10 @@
     <div class="container">
       <div class="row">
        <ul class="col-sm-6 list-inline">
-          <li class="list-inline-item"><a href="https://Evimess.github.io/disney-diversity/authors.html">Authors</a></li>
-          <li class="list-inline-item"><a href="https://Evimess.github.io/disney-diversity/archives.html">Archives</a></li>
-          <li class="list-inline-item"><a href="https://Evimess.github.io/disney-diversity/categories.html">Categories</a></li>
-          <li class="list-inline-item"><a href="https://Evimess.github.io/disney-diversity/tags.html">Tags</a></li>
+          <li class="list-inline-item"><a href="./authors.html">Authors</a></li>
+          <li class="list-inline-item"><a href="./archives.html">Archives</a></li>
+          <li class="list-inline-item"><a href="./categories.html">Categories</a></li>
+          <li class="list-inline-item"><a href="./tags.html">Tags</a></li>
         </ul>
         <p class="col-sm-6 text-sm-right text-muted">
           Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
