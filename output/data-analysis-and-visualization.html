@@ -9,7 +9,7 @@
   
   <title>Data Analysis and Visualization | Disney and Pixar Animated Film Casting Diversity
 </title>
-  <link rel="canonical" href="./my-first-post.html">
+  <link rel="canonical" href="./data-analysis-and-visualization.html">
 
 
 
@@ -100,6 +100,37 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set a JavaScript variable to the value of SITEURL
+    var siteUrl = ".";
+
+    // Define the specific page URL
+    var specificPageUrl = siteUrl + '/data-analysis-and-visualization.html';
+    console.log(specificPageUrl);
+    // Get the current page URL
+    var currentPageUrl = window.location.href;
+    console.log(currentPageUrl);
+
+    // Get the elements you want to add the class to
+    var elements = document.querySelectorAll('#main-container, #main-article');
+    console.log(currentPageUrl === specificPageUrl);
+    console.log(elements);
+    // Check if the current page is the specific page
+    if (currentPageUrl === specificPageUrl) {
+      // If it is, add the 'max-width' class to the elements
+      elements.forEach(function(element) {
+        element.classList.add('max-width');
+      });
+    } else {
+      // If it's not, remove the 'max-width' class from the element
+      elements.forEach(function(element) {
+        element.classList.remove('max-width');
+      });
+    }
+  });
+</script>
+
 </head>
 
 <body>
@@ -118,11 +149,11 @@
   </header>
 
   <div class="main">
-    <div class="container">
+    <div class="container" id="main-container">
       <h1>Data Analysis and Visualization
 </h1>
       <hr>
-<article class="article">
+<article class="article" id="main-article">
   <header>
     <ul class="list-inline">
       <li class="list-inline-item text-muted" title="2024-04-18T00:00:00-05:00">

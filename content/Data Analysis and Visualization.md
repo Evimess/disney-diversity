@@ -2,7 +2,7 @@ Title: Data Analysis and Visualization
 Date: 2024-04-18
 Category: Python
 Tags: pelican, python
-Slug: my-first-post
+Slug: data-analysis-and-visualization
 Authors: Evan Ma
 scripts: diversitygraph
 altair: True
@@ -113,7 +113,7 @@ On the left hand side are the IMDb selected posters for each movie and on the ri
 					</p>
 				</div>
 			</article>
-			<figure>
+			<figure style="height:500px;top: 242px;">
 				<p>0</p>
 			</figure>
 		</section>

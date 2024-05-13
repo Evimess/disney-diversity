@@ -38,4 +38,4 @@ THEME_CSS_OVERRIDES = ['themes/css/oldstyle.css']
 
 # Uncomment following line if you want document-relative URLs when developing
 #coment again when pushing ot github
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
