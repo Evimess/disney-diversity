@@ -11,6 +11,7 @@ Scrolly Telling!
 
 On the left hand side are the IMDb selected posters for each movie and on the right hand side are the graphs representing data from each decade.
 
+
 <!-- <div id="diversitygraph"></div> -->
 <section id="scrolly">
 			<article>
@@ -27,7 +28,7 @@ On the left hand side are the IMDb selected posters for each movie and on the ri
 					<img src="/images/caballeros.png">
 					<img src="/images/makemine.png">
 					<img src="/images/songofsouth.png">
-					<img src="/images/funcandfancy.png">
+					<img src="/images/funandfancy.png">
 					<img src="/images/melodytime.png">
 					<img src="/images/sodeartomyheart.png">
 					<img src="/images/ichaboad.png">

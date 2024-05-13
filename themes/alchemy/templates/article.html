@@ -67,8 +67,16 @@
 		var step = article.selectAll(".step");
     
     var altairIds = {
-      0: "diversitygraph",
+      0: "gender1",
       1: "diversitygraph2",
+      2: "gender2",
+      3: "gender3",
+      4: "gender4",
+      5: "gender5",
+      6: "gender6",
+      7: "gender7",
+      8: "gender8",
+      9: "gender9",
     }
 		// initialize the scrollama
 		var scroller = scrollama();
@@ -76,7 +84,7 @@
 		// generic window resize listener event
 		function handleResize() {
 			// 1. update height of step elements
-			var stepH = Math.floor(window.innerHeight * 0.75);
+			var stepH = Math.floor(window.innerHeight * 0.85);
 			step.style("height", stepH + "px");
 
 			var figureHeight = window.innerHeight / 2;
