@@ -42,6 +42,7 @@ On the left hand side are the IMDb selected posters for each movie and on the ri
 					<img src="{static}/images/peterpan.png">
 					<img src="{static}/images/ladytramp.png">
 					<img src="{static}/images/sleepingbeauty.png">
+					<img src="{static}/images/Story3.png">
                     </p>
 				</div>
 				<div class="step" data-step="3">
@@ -81,7 +82,7 @@ On the left hand side are the IMDb selected posters for each movie and on the ri
 					<img src="{static}/images/ducktalesmovie.png">
 					<img src="{static}/images/rescuersdown.png">
 					<img src="{static}/images/beautybeast.png">
-					<img src="{static}/images/aladdin.png">
+					<img src="{static}/images/Aladin.png">
 					<img src="{static}/images/nightmarechrist.png">
 					<img src="{static}/images/lionking.png">
 					<img src="{static}/images/goofymov.png">
@@ -100,16 +101,85 @@ On the left hand side are the IMDb selected posters for each movie and on the ri
 				<div class="step" data-step="7">
 					<p>
 					2000s
+					<img src="{static}/images/tigger.png">
+					<img src="{static}/images/Dinosaur.png">
+					<img src="{static}/images/emporer.png">
+					<img src="{static}/images/Aladin.png">
+					<img src="{static}/images/recess.png">
+					<img src="{static}/images/atlantis.png">
+					<img src="{static}/images/monsters.png">
+					<img src="{static}/images/return.png">
+					<img src="{static}/images/lilo.png">
+					<img src="{static}/images/treasure.png">
+					<img src="{static}/images/Jungle.png">
+					<img src="{static}/images/piglet.png">
+					<img src="{static}/images/Lizzie.png">
+					<img src="{static}/images/Nemo.png">
+					<img src="{static}/images/BB.png">
+					<img src="{static}/images/TeacherPet.png">
+					<img src="{static}/images/home.png">
+					<img src="{static}/images/Incredibles.png">
+					<img src="{static}/images/Heffalump.png">
+					<img src="{static}/images/Valient.png">
+					<img src="{static}/images/Chicken.png">
+					<img src="{static}/images/Wild.png">
+					<img src="{static}/images/Cars.png">
+					<img src="{static}/images/Robinsons.png">
+					<img src="{static}/images/Rata.png">
+					<img src="{static}/images/enchanted.png">
+					<img src="{static}/images/walle.png">
+					<img src="{static}/images/Bolt.png">
+					<img src="{static}/images/UP.png">
+					<img src="{static}/images/Christmas.png">
+					<img src="{static}/images/Frog.png">
 					</p>
 				</div>
 				<div class="step" data-step="8">
 					<p>
 					2010s
+					<img src="{static}/images/Story3.png">
+					<img src="{static}/images/Tangled.png">
+					<img src="{static}/images/Gnomeo.png">
+					<img src="{static}/images/Mars.png">
+					<img src="{static}/images/Cars2.png">
+					<img src="{static}/images/Winnie.png">
+					<img src="{static}/images/Brave.png">
+					<img src="{static}/images/Frank.png">
+					<img src="{static}/images/Wreck.png">
+					<img src="{static}/images/Oz.png">
+					<img src="{static}/images/MonstersUni.png">
+					<img src="{static}/images/Planes.png">
+					<img src="{static}/images/Frozen.png">
+					<img src="{static}/images/Planes2.png">
+					<img src="{static}/images/Big6.png">
+					<img src="{static}/images/strangemagic.png">
+					<img src="{static}/images/InsideOut.png">
+					<img src="{static}/images/Thegoodine.png">
+					<img src="{static}/images/zootopia.png">
+					<img src="{static}/images/Dory.png">
+					<img src="{static}/images/moana.png">
+					<img src="{static}/images/cars3.png">
+					<img src="{static}/images/coco.png">
+					<img src="{static}/images/Incredibles2.png">
+					<img src="{static}/images/ralphinternet.png">
+					<img src="{static}/images/Marypoppins.png">
+					<img src="{static}/images/toy4.png">
+					<img src="{static}/images/frozen2.png">
 					</p>
 				</div>
 				<div class="step" data-step="9">
 					<p>
 					2020s
+					<img src="{static}/images/onward.png">
+					<img src="{static}/images/Soul.png">
+					<img src="{static}/images/Raya.png">
+					<img src="{static}/images/turningred.png">
+					<img src="{static}/images/luca.png">
+					<img src="{static}/images/Encanto.png">
+					<img src="{static}/images/lightyear.png">
+					<img src="{static}/images/strangeworld.png">
+					<img src="{static}/images/elemental.png">
+					<img src="{static}/images/wish.png">
 					</p>
 				</div>
 			</article>
